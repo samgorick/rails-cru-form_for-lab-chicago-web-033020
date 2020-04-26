@@ -1,0 +1,9 @@
+<h1>See all artists</h1>
+
+<% @artists.each do |artist| %>
+  <h3>Name: <%= link_to artist.name, artist_path(artist) %></h3>
+  <h3>Bio: <%= artist.bio %></h3>
+<% end %>
+
+<h3><%= link_to "See all songs", songs_path %></h3>
+<h3><%= link_to "See all genres", genres_path %></h3>
